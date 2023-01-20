@@ -1,6 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-	<Import Project="$(MSBuildExtensionsPath64)\$(MSBuildToolsVersion)\Microsoft.NET.Sdk" Condition="Exists('$(MSBuildExtensionsPath64)\$(MSBuildToolsVersion)\Microsoft.NET.Sdk')" />
-	<PropertyGroup>
+﻿<Project>
+		<Sdk Name="Microsoft.NET.Sdk" />
+		<PropertyGroup>
 		<Description>The official sync/async .NET client for the Sift API.</Description>
 		<Authors>Sift, Gary Lee</Authors>
 		<AssemblyTitle>Sift</AssemblyTitle>
