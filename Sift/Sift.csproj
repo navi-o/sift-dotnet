@@ -1,34 +1,35 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <Description>The official sync/async .NET client for the Sift API.</Description>
-    <Authors>Sift, Gary Lee</Authors>
-    <AssemblyTitle>Sift</AssemblyTitle>
-    <AssemblyName>Sift</AssemblyName>
-    <VersionPrefix>0.10.2</VersionPrefix>
-    <VersionSuffix>beta</VersionSuffix>
-    <PackageReleaseNotes>Beta release</PackageReleaseNotes>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>Sift</PackageId>
-    <PackageTags>sift;siftscience;client;api;client;async</PackageTags>
-    <PackageIconUrl>https://s3.amazonaws.com/sift-assets/email/sift_32h.png</PackageIconUrl>
-    <PackageProjectUrl>https://github.com/siftscience/sift-dotnet</PackageProjectUrl>
-    <PackageLicenseUrl>https://raw.github.com/siftscience/sift-dotnet/master/LICENSE</PackageLicenseUrl>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
-    <SignAssembly>True</SignAssembly>
-  </PropertyGroup>
+	<Import Project="$(MSBuildExtensionsPath64)\$(MSBuildToolsVersion)\Microsoft.NET.Sdk" Condition="Exists('$(MSBuildExtensionsPath64)\$(MSBuildToolsVersion)\Microsoft.NET.Sdk')" />
+	<PropertyGroup>
+		<Description>The official sync/async .NET client for the Sift API.</Description>
+		<Authors>Sift, Gary Lee</Authors>
+		<AssemblyTitle>Sift</AssemblyTitle>
+		<AssemblyName>Sift</AssemblyName>
+		<VersionPrefix>0.10.2</VersionPrefix>
+		<VersionSuffix>beta</VersionSuffix>
+		<PackageReleaseNotes>Beta release</PackageReleaseNotes>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<PackageId>Sift</PackageId>
+		<PackageTags>sift;siftscience;client;api;client;async</PackageTags>
+		<PackageIconUrl>https://s3.amazonaws.com/sift-assets/email/sift_32h.png</PackageIconUrl>
+		<PackageProjectUrl>https://github.com/siftscience/sift-dotnet</PackageProjectUrl>
+		<PackageLicenseUrl>https://raw.github.com/siftscience/sift-dotnet/master/LICENSE</PackageLicenseUrl>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
+		<SignAssembly>True</SignAssembly>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Event\" />
-    <Folder Include="Core\" />
-    <Folder Include="Exception\" />
-    <Folder Include="Request\" />
-    <Folder Include="Response\" />
-    <Folder Include="Util\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Event\" />
+		<Folder Include="Core\" />
+		<Folder Include="Exception\" />
+		<Folder Include="Request\" />
+		<Folder Include="Response\" />
+		<Folder Include="Util\" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+		<PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+	</ItemGroup>
 </Project>
